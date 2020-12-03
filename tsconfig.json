@@ -11,6 +11,7 @@
         "noUnusedParameters": true,
         "sourceMap": true,
         "strict": true,
+        "resolveJsonModule": true,
     "target": "es6",
     },
     "include": ["src"],
