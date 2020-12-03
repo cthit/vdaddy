@@ -1,0 +1,253 @@
+{
+  "questions": [
+    {
+      "question": "Glass på vintern",
+      "answers": ["Ja", "Nej"]
+    },
+    {
+      "question": "Från skala 1 - 5 där 1 är kyla och 5 är värme, vad föredrar du (in terms of väder)",
+      "answers": ["1", "2", "3", "4", "5"]
+    },
+    {
+      "question": "Wireless eller ethernet på din huvuddator?",
+      "answers": ["Wireless", "Ethernet"]
+    },
+    {
+      "question": "Vad är OS på din dator",
+      "answers": ["Arch", "Windows", "Osx", "Annat"]
+    },
+    {
+      "question": "Skala från 1 - 5, hur mycket gillar du skräckfilmer",
+      "answers": ["1", "2", "3", "4", "5"]
+    },
+    {
+      "question": "Vilken rank är du på League of Legends?",
+      "answers": [
+        "Iron",
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Platinum",
+        "Diamond",
+        "Masters",
+        "GrandMasters",
+        "Challenger",
+        "What is the league?"
+      ]
+    },
+    {
+      "question": "Vilket är du räddast för?",
+      "answers": ["C++", "C", "C#", "Java", "Svenska"]
+    },
+    {
+      "question": "Favorit Ghibli film",
+      "answers": [
+        "Princess Mononoke",
+        "My neighbor Totoro",
+        "Spirited away",
+        "I am uncultured"
+      ]
+    },
+    {
+      "question": "Är du weeb?",
+      "answers": [
+        "Nej.",
+        "Nej, jag må kolla lite 'anime' då och då, men jag skulle själv inte kalla mig en 'weeabou'",
+        "Hai Desu Desu"
+      ]
+    },
+    {
+      "question": "Hur länge spenderar du vid datorn per vecka?",
+      "answers": [
+        "0 - 2 timmar",
+        "2 - 6 timmar",
+        "6 - 12 timmar",
+        "12 - 169 timmar"
+      ]
+    },
+    {
+      "question": "Vad är din reaktion till att en server börja brinna?",
+      "answers": [
+        "Ring brandkåren",
+        "Ring en pattet",
+        "Starta om den",
+        "Hämta korv"
+      ]
+    },
+    {
+      "question": "Någon säger att din kod är skräp, vad gör du?",
+      "answers": [
+        "Tackar person för kritiken och använd det som en grund till framtida personlig utveckling.",
+        "Nicka och le, för att sedan ta ut ilskan hemma.",
+        "Sök igenom personens github konto för saker att kritisera",
+        "Informera personen att han/hon/den är en “script kiddie” och bör hålla sig till scratch tutorials",
+        "Initiera slagsmål."
+      ]
+    },
+    {
+      "question": "Du fick IG på en tenta, vad är din reaction?",
+      "answers": [
+        "If at first I don't succeed, try again!",
+        "Lägg den på högen",
+        "Omöjligt, examinator måste haft fel.",
+        "Byter till ekonomi"
+      ]
+    },
+    {
+      "question": "Från en skala från 1 till 5, hur hipster är du i smak av spel?",
+      "answers": ["1", "2", "3", "4", "5"]
+    },
+    {
+      "question": "Vad är din favorit anime?",
+      "answers": [
+        "Pokemon",
+        "Sword art online",
+        "Highschool dxd",
+        "JoJo",
+        "Family guy"
+      ]
+    },
+    {
+      "question": "Du ska börja ett nytt software project, vilken språk/teknik använder du?",
+      "answers": [
+        "Något välanvänt o säkert, jag vill att allt ska vara stabilt och att andra ska kunna arbeta med det i framtiden",
+        "Jag använder js i frontend,backend, och på brödrosten",
+        "Något nytt o spännande. Visst så kommer det vara deprecated inom 10 minuter, men det kommer vara roligt tills dess.",
+        "Haskell"
+      ]
+    },
+    {
+      "question": "Det är dags för styrketräning, vilken är din favorit pass?",
+      "answers": ["Legs", "Chest", "Arms", "Bär billys pizzan till skrivbordet"]
+    },
+    {
+      "question": "Hur ofta drar du morbida, självnedvärdering skämt",
+      "answers": [
+        "Aldrig",
+        "Inte ofta",
+        "Ofta",
+        "ima yeet myself out of this mortal coil."
+      ]
+    },
+    {
+      "question": "Är du en furry?",
+      "answers": ["Nej", "UwU?", "OwO??"]
+    },
+    {
+      "question": "Hur snabbt kan du springa?",
+      "answers": ["Snabbt", "Ganska snabbt", "Inte så snabbt", "Springa?"]
+    },
+    {
+      "question": "Klockan är 03:04 på morgonen och din kod fungerar inte, vad gör du?",
+      "answers": [
+        "Går och lägger mig, kommer vara mer produktiv när jag är pigg",
+        "Hittar en lösning på stackoverflow, kopierar det, och sover",
+        "Tar några shots redbull och caffe, dags att få det här gjort!",
+        "Då jag vaknade några timmar sen, så ser jag ingen problem."
+      ]
+    },
+    {
+      "question": "Hur skriver du git commit messages?",
+      "answers": [
+        "Långa och detaljerade, annars fattar ingen vad jag skriver",
+        "Kortfattade och sakliga, annars kommer ingen läsa dem",
+        "Jag skriver enligt ${ÅRETS POPULÄRA FORMAT}, därför allt annat är skräp.",
+        "Jag skriver memes, därför ingen kommer läsa dem ändå"
+      ]
+    },
+    {
+      "question": "Vem är din favorit karaktär i tv showen Friends?",
+      "answers": [
+        "Chandler",
+        "Ross",
+        "Emily",
+        "Monica",
+        "Phoebe",
+        "Rachel",
+        "Zoey",
+        "Vad är friends?"
+      ]
+    },
+    {
+      "question": "Dokumenterar du och skriver tester till dina program?",
+      "answers": ["Nej", "Nej++"]
+    },
+    {
+      "question": "Favorit färg",
+      "answers": [
+        "#09CDDA",
+        "rgba(9, 205, 218,1.0);",
+        "'turqoise'",
+        "'hotpink'"
+      ]
+    },
+    {
+      "question": "Hur många språk kan du",
+      "answers": ["1", "2", "3", "4", "Programering eller riktiga?", "70"]
+    },
+    {
+      "question": "Hur strikt är du när det gäller skolan?",
+      "answers": [
+        "Skickar in 2 min innan deadline",
+        "Strukturerar upp så det blir mindre stress och bra med tid",
+        "Skickar in 1 timme innan deadline, jag är inte en vilding."
+      ]
+    },
+    {
+      "question": "Hur många klistermärken har du på din laptop?",
+      "answers": [
+        "1",
+        "2-4",
+        "Mer än 4",
+        "Varför skulle jag förstöra min laptop?"
+      ]
+    },
+    {
+      "question": "Kallar folk dig en “e-girl”?",
+      "answers": ["Nej", "Ja, men jag vet inte varför", "Ja, jag vet varför"]
+    },
+    {
+      "question": "Musik smak?",
+      "answers": [
+        "Top 100",
+        "Hård rock",
+        "Klassiskt",
+        "Lofi hip hop beats to study and relax to",
+        "Spelmusik"
+      ]
+    },
+    {
+      "question": "Vilken stil använder du för variabler?",
+      "answers": [
+        "camelCase",
+        "PascalCase",
+        "Snake_case",
+        "Kebab-case",
+        "SCREAMCASE"
+      ]
+    },
+    {
+      "question": "Hur gillar du din kaffe?",
+      "answers": [
+        "Mjölk.",
+        "Mjölk med skvät kaffe",
+        "50 / 50, as all things should be",
+        "Caffe latte",
+        "Caffe med skvät mjölk",
+        "Mörk som min framtid"
+      ]
+    },
+    {
+      "question": "Gillar damsugare?",
+      "answers": ["Ja", "Nej"]
+    },
+    {
+      "question": "Hur många raspberry pi’s äger du?",
+      "answers": ["0", "1", "2-3", "4-15"]
+    },
+    {
+      "question": "Heter du santa? (Har ingen påverkan på spelet)",
+      "answers": ["Ja", "Nej"]
+    }
+  ]
+}
