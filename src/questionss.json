@@ -1,0 +1,30 @@
+{
+  "questions": [
+    {
+      "name": "Fungerar detta quizzet?",
+      "answers": [
+        {
+          "answer": "Ja",
+          "contestants": ["dino", "rosen", "yoda"]
+        },
+        {
+          "answer": "nej",
+          "contestants": ["swexbe", "sponken", "nemo", "sylle"]
+        }
+      ]
+    },
+    {
+      "name": "Fungerar detta quizzet?",
+      "answers": [
+        {
+          "answer": "Ja",
+          "contestants": ["dino", "rosen", "yoda"]
+        },
+        {
+          "answer": "nej",
+          "contestants": []
+        }
+      ]
+    }
+  ]
+}
