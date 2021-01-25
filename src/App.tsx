@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { questions } from "./questions.json";
+import { questions } from "./data.json";
+import { Question } from "./Question";
 import "./styles.css";
 
 interface AppProps {
@@ -20,39 +21,23 @@ export const App = ({ name }: AppProps) => {
       Hello, {name}
       {questions.map((question, questionIndex) => {
         return (
-          <div>
-            <h2>{question.name}</h2>
-            <form>
-              {question.answers.map((answer, answerIndex) => {
-                return (
-                  <div>
-                    <input
-                      id={questionIndex + answerIndex.toString()}
-                      name={question.name}
-                      type="radio"
-                      checked={selectedAnswers[questionIndex] === answerIndex}
-                      value={answer.answer}
-                      onChange={() =>
-                        setSelectedAnswers((selectedAnswers) => {
-                          return selectedAnswers.map(
-                            (selectedAnswer, selectedAnswerIndex) => {
-                              if (selectedAnswerIndex === questionIndex) {
-                                return answerIndex;
-                              }
-                              return selectedAnswer;
-                            }
-                          );
-                        })
-                      }
-                    />
-                    <label htmlFor={questionIndex + answerIndex.toString()}>
-                      {answer.answer}
-                    </label>
-                  </div>
-                );
-              })}
-            </form>
-          </div>
+          <Question
+            key={questionIndex}
+            title={question.name}
+            answers={question.answers.map(({ label }) => label)}
+            selectedIndex={selectedAnswers[questionIndex]}
+            onAnswerSelected={(newAnswerIndex) => {
+              setSelectedAnswers((selectedAnswers) => {
+                return selectedAnswers.map((selectedAnswer, index) => {
+                  if (index === questionIndex) {
+                    return newAnswerIndex;
+                  }
+
+                  return selectedAnswer;
+                });
+              });
+            }}
+          />
         );
       })}
     </div>
