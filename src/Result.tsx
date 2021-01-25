@@ -20,7 +20,6 @@ function result(selectedAnswers: number[]) {
     }
   }
   let r = "";
-  console.log(tallyMap);
   for (const [name, value] of tallyMap) {
     if (value! > (tallyMap.get(r) || 0)) {
       r = name;

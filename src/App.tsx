@@ -15,19 +15,8 @@ export const App = () => {
   );
   const [showQuestions, setShowQuestions] = useState(true);
 
-  //const r = result(selectedAnswers);
   return (
     <div>
-      {/* <ul>
-        {Array.from(r.entries()).map(([key, value]) => {
-          return (
-            <li>
-              {key}:{value}
-            </li>
-          );
-        })}
-      </ul> */}
-
       {showQuestions ? (
         <div>
           {questions.map((question, questionIndex) => {
