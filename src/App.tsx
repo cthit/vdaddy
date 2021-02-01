@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { questions } from "./questions.json";
+import { questions } from "./data.json";
+import { Question } from "./Question";
+import { Result } from "./Result";
 import "./styles.css";
 
-interface AppProps {
-  name: string;
-}
-
-export const App = ({ name }: AppProps) => {
+export const App = () => {
   const [selectedAnswers, setSelectedAnswers] = useState(
     Array.from(
       {
@@ -15,46 +13,45 @@ export const App = ({ name }: AppProps) => {
       () => -1
     )
   );
+  const [showQuestions, setShowQuestions] = useState(true);
+
   return (
     <div>
-      Hello, {name}
-      {questions.map((question, questionIndex) => {
-        return (
-          <div>
-            <h2>{question.name}</h2>
-            <form>
-              {question.answers.map((answer, answerIndex) => {
-                return (
-                  <div>
-                    <input
-                      id={questionIndex + answerIndex.toString()}
-                      name={question.name}
-                      type="radio"
-                      checked={selectedAnswers[questionIndex] === answerIndex}
-                      value={answer.answer}
-                      onChange={() =>
-                        setSelectedAnswers((selectedAnswers) => {
-                          return selectedAnswers.map(
-                            (selectedAnswer, selectedAnswerIndex) => {
-                              if (selectedAnswerIndex === questionIndex) {
-                                return answerIndex;
-                              }
-                              return selectedAnswer;
-                            }
-                          );
-                        })
+      {showQuestions ? (
+        <div>
+          {questions.map((question, questionIndex) => {
+            return (
+              <Question
+                key={questionIndex}
+                title={question.name}
+                answers={question.answers.map(({ label }) => label)}
+                selectedIndex={selectedAnswers[questionIndex]}
+                onAnswerSelected={(newAnswerIndex) => {
+                  setSelectedAnswers((selectedAnswers) => {
+                    return selectedAnswers.map((selectedAnswer, index) => {
+                      if (index === questionIndex) {
+                        return newAnswerIndex;
                       }
-                    />
-                    <label htmlFor={questionIndex + answerIndex.toString()}>
-                      {answer.answer}
-                    </label>
-                  </div>
-                );
-              })}
-            </form>
-          </div>
-        );
-      })}
+
+                      return selectedAnswer;
+                    });
+                  });
+                }}
+              />
+            );
+          })}
+          <button
+            disabled={selectedAnswers.filter((a) => a === -1).length !== 0}
+            onClick={() => {
+              setShowQuestions(false);
+            }}
+          >
+            submit
+          </button>
+        </div>
+      ) : (
+        <Result selectedAnswers={selectedAnswers} />
+      )}
     </div>
   );
 };

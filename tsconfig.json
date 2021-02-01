@@ -3,6 +3,7 @@
     "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "jsx": "react",
+        "lib": ["ES2017","DOM"],
         "moduleResolution": "node",
         "noEmit": true,
         "noFallthroughCasesInSwitch": true,
