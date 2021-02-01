@@ -1,3 +1,17 @@
 body {
-  background-color: turquoise;
+  background-color: plum;
+  font-family: fantasy;
+}
+.test {
+  width: 50px;
+  height: 50px;
+  border-color: black;
+}
+
+label {
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px;
+  border-radius: 10px;
 }

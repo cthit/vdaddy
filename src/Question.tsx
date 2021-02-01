@@ -15,7 +15,7 @@ export const Question = React.memo(
         <h2>{title}</h2>
         {answers.map((answer, answerIndex) => {
           return (
-            <div key={answerIndex}>
+            <div key={answerIndex} style={{ height: "60px" }}>
               <input
                 id={base64(title + answer)}
                 name={base64(title)}
