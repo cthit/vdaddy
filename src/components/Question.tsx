@@ -11,7 +11,7 @@ interface QuestionProps {
 export const Question = React.memo(
   ({ title, answers, selectedIndex, onAnswerSelected }: QuestionProps) => {
     return (
-      <div>
+      <div style={{ userSelect: "none" }}>
         <h2>{title}</h2>
         {answers.map((answer, answerIndex) => {
           return (

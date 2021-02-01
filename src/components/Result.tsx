@@ -33,5 +33,20 @@ interface ResultProps {
 
 export const Result = ({ selectedAnswers }: ResultProps) => {
   const r = result(selectedAnswers);
-  return <div>DU ÄR: {r} FRÅN DIGIT'20!!!!!</div>;
+  return (
+    <div
+      style={{
+        textAlign: "center",
+        fontWeight: "bold",
+        fontSize: "100px",
+        fontFamily: "Coda Caption",
+        float: "left",
+        backgroundImage:
+          "linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red)",
+      }}
+    >
+      DU ÄR: {r} FRÅN DIGIT'20!!!!! <br />
+      🎊🥳🎂🎊🎉🎉🎉🎉🎉🎊🎂🥳🎊
+    </div>
+  );
 };
