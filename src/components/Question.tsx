@@ -11,11 +11,11 @@ interface QuestionProps {
 export const Question = React.memo(
   ({ title, answers, selectedIndex, onAnswerSelected }: QuestionProps) => {
     return (
-      <div>
+      <div style={{ userSelect: "none" }}>
         <h2>{title}</h2>
         {answers.map((answer, answerIndex) => {
           return (
-            <div key={answerIndex}>
+            <div key={answerIndex} style={{ height: "60px" }}>
               <input
                 id={base64(title + answer)}
                 name={base64(title)}

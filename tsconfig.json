@@ -1,19 +1,32 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "jsx": "react",
-        "lib": ["ES2017","DOM"],
-        "moduleResolution": "node",
-        "noEmit": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "sourceMap": true,
-        "strict": true,
-        "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "lib": [
+      "ES2017",
+      "DOM"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "strict": true,
+    "resolveJsonModule": true,
     "target": "es6",
-    },
-    "include": ["src"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "isolatedModules": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
