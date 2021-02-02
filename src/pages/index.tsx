@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { questions } from "./data.json";
-import { Question } from "./Question";
-import { Result } from "./Result";
-import "./styles.css";
+import { questions } from "../components/data.json";
+import { Question } from "../components/Question";
+import { Result } from "../components/Result";
 
-export const App = () => {
+const App = () => {
   const [selectedAnswers, setSelectedAnswers] = useState(
     Array.from(
       {
@@ -17,6 +16,7 @@ export const App = () => {
 
   return (
     <div>
+      <img src="/vdady.png" style={{ float: "right" }} />
       {showQuestions ? (
         <div>
           {questions.map((question, questionIndex) => {
@@ -55,3 +55,4 @@ export const App = () => {
     </div>
   );
 };
+export default App;
